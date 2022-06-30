@@ -2,11 +2,12 @@
 
 /**
  *
- *  * main - main block
+ * main - entry to the program
  *
- *   * Return: 0
+ * return : 0
  *
- *    */
+ */
+ 
 
 int main(void)
 
