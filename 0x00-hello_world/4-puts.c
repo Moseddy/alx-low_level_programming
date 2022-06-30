@@ -5,8 +5,7 @@
  * main - entry to the program
  *
  * return : 0
- *
- */
+*/
  
 
 int main(void)
