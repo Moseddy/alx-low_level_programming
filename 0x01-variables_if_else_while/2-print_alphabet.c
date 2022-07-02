@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
  * main -> This program uses the putchar function to print alphabets
  * Return: Success always 0
