@@ -9,10 +9,11 @@ int main(void)
 	int ch;
 
 	num = 48;
-	ch = 49;
 
 	while (num <= 57)
 	{
+		ch = 49;
+
 		while (ch <= 57)
 		{
 			if (ch > num)
