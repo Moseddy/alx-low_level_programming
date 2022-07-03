@@ -6,17 +6,20 @@
 int main(void)
 {
 	int number;
+	char alpha;
 
 	number = 48;
+	alpha = 'a';
 
-	while (number < 102)
+	while (number <= 57)
 	{
 		putchar(number);
-		if (number == 57)
-		{
-			number += 39;
-			number++;
-		}
+		number++;
+	}
+	while (alpha <= 'f')
+	{
+		putchar(alpha);
+		alpha++;
 	}
 	putchar('\n');
 	return (0);
