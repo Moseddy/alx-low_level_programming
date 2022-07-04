@@ -17,13 +17,16 @@ int main(void)
 			num2 = 50;
 			while (num2 <= 57)
 			{
-				if (ch < num1 || num1 < num2)
+				if (num2 > num1 > ch)
 				{
 					putchar(ch);
 					putchar(num1);
 					putchar(num2);
-					putchar(',');
-					putchar(' ');
+					if (ch != 55 || num1 != 56 || num2 != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 				num2++;
 			}
