@@ -1,48 +1,36 @@
 #include <stdio.h>
 /**
- * main -> This program prints a combination of numbers in a format
+ * main -> This program prints a combination of numbers
  * Return: Success always 0
  */
 int main(void)
 {
-	int ch;
-	int num1;
-	int num2;
-	int num3;
+	int number1;
+	int number2;
 
-	ch = 48;
+	number1 = 0;
 
-	while (ch <= 57)
+	while (number1 <= 99)
 	{
-		num1 = 48;
-		while (num1 <= 56)
+		number2 = number1;
+		while (number2 <= 99)
 		{
-			num2 = 48;
-			while (num2 <= 57)
+			if (number2 != number1)
 			{
-				num3 = 49;
-				while (num3 <= 57)
+				putchar((number1 / 10) + 48);
+				putchar((number1 % 10) + 48);
+				putchar(' ');
+				putchar((number2 / 10) + 48);
+				putchar((number2 % 10) + 48);
+				if (number1 != 98 || number2 != 99)
 				{
-					if ((ch >= num1) && (num2 <= num3))
-					{
-						putchar(ch);
-						putchar(num1);
-						putchar(' ');
-						putchar(num2);
-						putchar(num3);
-						if (ch != 57 || num1 != 56 || num2 != 57 || num3 != 57)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					num3++;
+					putchar(',');
+					putchar(' ');
 				}
-				num2++;
 			}
-			num1++;
+			number2++;
 		}
-		ch++;
+		number1++;
 	}
 	putchar('\n');
 	return (0);
