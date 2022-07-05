@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * print_alphabet -> This program prints the alphabets a-z using the _putchar function
+ * print_alphabet -> This program prints the alphabets a-z
  * Return: Success always 0
  */
 void print_alphabet(void)
 {
-	int ch;
+	char ch;
 
-	ch = 97;
+	ch = 'a';
 
-	while (ch <= 172)
+	while (ch <= 'z')
 	{
 		_putchar(ch);
 		ch++;
