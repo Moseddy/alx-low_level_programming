@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main -> This program prints the alphabets a-z using the _putchar function
+ * print_alphabet -> This program prints the alphabets a-z using the _putchar function
  * Return: Success always 0
  */
 void print_alphabet(void)
