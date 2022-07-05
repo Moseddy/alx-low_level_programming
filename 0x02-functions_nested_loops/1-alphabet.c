@@ -3,7 +3,7 @@
  * main -> This program prints the alphabets a-z using the _putchar function
  * Return: Success always 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	int ch;
 
@@ -16,5 +16,4 @@ int main(void)
 	}
 	_putchar('\n');
 
-	return (0);
 }
