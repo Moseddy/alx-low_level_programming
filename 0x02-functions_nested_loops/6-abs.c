@@ -4,9 +4,8 @@
  * @n: The argument passed into the function
  * Return: Success the absolute value of n
  */
-int _abs(int)
+int _abs(int n)
 {
-	int n;
 
 	if (n < 0)
 	{
