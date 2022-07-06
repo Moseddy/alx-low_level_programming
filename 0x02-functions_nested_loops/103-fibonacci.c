@@ -13,14 +13,14 @@ int main(void)
 	b = 1;
 	sum = 0;
 
-	for(i = 0; i <= 33; i++)
+	for (i = 0; i <= 33; i++)
 	{
 		c = a + b;
 		a = b;
 		b = c;
 		if (c <= 4000000 && (c % 2) == 0)
 		sum = sum + c;
-		printf("%lu\n", sum);
 	}
+	printf("%lu\n", sum);
 	return (0);
 }
