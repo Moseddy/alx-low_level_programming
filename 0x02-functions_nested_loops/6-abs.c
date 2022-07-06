@@ -6,9 +6,9 @@
  */
 int _abs(int n)
 {
-	int a;
+	int n;
 
-	if (a < 0)
+	if (n < 0)
 	{
 		return (-n);
 	}
