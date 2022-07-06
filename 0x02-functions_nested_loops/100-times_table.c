@@ -8,13 +8,11 @@ void print_times_table(int n)
 {
 	int i, j, k;
 
-	if (n > 0 || n < 16)
+	if (n > 0 && n < 16)
 	{
-		i = 0;
-		while (i <= n)
+		for (i = 0; i <= n; i++)
 		{
-			j = 0;
-			while (j <= n)
+			for (j = 0; j <= n; j++)
 			{
 				k = i * j;
 				if (j == 0)
@@ -45,10 +43,8 @@ void print_times_table(int n)
 					_putchar(((k / 10) % 10) + 48);
 					_putchar((k % 10) + 48);
 				}
-				j++;
 			}
 			_putchar('\n');
-			i++;
 		}
 	}
 }
