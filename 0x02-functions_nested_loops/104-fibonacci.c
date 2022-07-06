@@ -16,7 +16,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if (c != 3736710778780434371)
+		if (i != 98)
 		{
 			printf("%lu, ", c);
 		}
