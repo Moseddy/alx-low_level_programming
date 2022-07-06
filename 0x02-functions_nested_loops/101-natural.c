@@ -3,9 +3,9 @@
  * main -> This function prints the multiple of 3, 5 btw 0-1024
  * Return: Success always 0
  */
-int main()
+int main(void)
 {
-	int i, j, sum, sum5;
+	int i, sum, sum5;
 
 	sum = 0;
 	sum5 = 0;
