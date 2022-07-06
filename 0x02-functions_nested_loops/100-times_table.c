@@ -44,8 +44,8 @@ void print_times_table(int n)
 					_putchar((k % 10) + 48);
 				}
 				j++;
-				_putchar('\n');
 			}
+			_putchar('\n');
 			i++;
 		}
 	}
