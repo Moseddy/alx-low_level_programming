@@ -16,8 +16,14 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%lu, ", c);
+		if (c != 20365011074)
+		{
+			printf("%lu, ", c);
+		}
+		else
+		{
+			printf("%lu\n", c);
+		}
 	}
-	printf("\n");
 	return (0);
 }
