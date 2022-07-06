@@ -10,9 +10,9 @@ int print_last_digit(int num)
 
 	if (num < 0)
 	{
-		num = -num;
-		remainder = num % 10;
+		num = _abs(num);
 	}
+	remainder = num % 10;
 	_putchar(remainder + 48);
 	return (remainder);
 }
