@@ -14,8 +14,6 @@ int main(void)
 	for (i = 0; i <= 98; i++)
 	{
 		c = a + b;
-		a = b;
-		b = c;
 		if (i != 98)
 		{
 			printf("%lu, ", c);
@@ -24,6 +22,8 @@ int main(void)
 		{
 			printf("%lu\n", c);
 		}
+		a = b;
+		b = c;
 	}
 	return (0);
 }
