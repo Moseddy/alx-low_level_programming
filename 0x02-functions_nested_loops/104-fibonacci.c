@@ -11,7 +11,7 @@ int main(void)
 	a = 0;
 	b = 1;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 1; i <= 98; i++)
 	{
 		c = a + b;
 		if (i != 98)
