@@ -1,29 +1,58 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main -> This program prints the first98 fivonacci numbers
- * Return: Success always 0
- */
-int main(void)
+ * numLength - returns the length of string
+ * @num: operand number
+ * Return: number of digits
+*/
+int numLength(int num)
 {
-	unsigned long int a, b, c;
-	int i;
 
-	a = 0;
-	b = 1;
+	int length = 0;
 
-	for (i = 1; i <= 98; i++)
+	if (!num)
+		return (1);
+	while (num)
 	{
-		c = a + b;
-		if (i != 98)
+		num = num / 10;
+		length += 1;
+	}
+	return (length);
+}
+
+/**
+ * main - Entry point
+ * Description: prints the first 98 Fibonacci numbers
+ *	Solution was copied from Nobert Patrick
+ *	Wise, github handle: Trikcode
+ * Return: Always 0 (Success)
+*/
+int main(void)
+
+{
+	int count, initial0s;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
+
+	for (count = 1; count <= 98; ++count)
+	{
+		if (f1o > 0)
+			printf("%lu", f1o);
+		initial0s = numLength(mx) - 1 - numLength(f1);
+		while (f1o > 0 && initial0s > 0)
 		{
-			printf("%lu, ", c);
+			printf("%d", 0);
+			--initial0s;
 		}
+		printf("%lu", f1);
+		sum = (f1 + f2) % mx;
+		sumo = f1o + f2o + (f1 + f2) / mx;
+		f1 = f2;
+		f1o = f2o;
+		f2 = sum;
+		f2o = sumo;
+		if (count != 98)
+			printf(", ");
 		else
-		{
-			printf("%lu\n", c);
-		}
-		a = b;
-		b = c;
+			printf("\n");
 	}
 	return (0);
 }
